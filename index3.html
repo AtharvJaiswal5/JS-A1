@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Subject Grading System</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Grading System</h1>
+        <p>Enter marks for four subjects (out of 100).</p>
+        <div class="input-group">
+            <label for="sub1-marks">Javascript :</label>
+            <input type="number" class="subject-marks" id="sub1-marks" placeholder="e.g., 85" min="0" max="100">
+        </div>
+        <div class="input-group">
+            <label for="sub2-marks">DAA :</label>
+            <input type="number" class="subject-marks" id="sub2-marks" placeholder="e.g., 90" min="0" max="100">
+        </div>
+        <div class="input-group">
+            <label for="sub3-marks">CN:</label>
+            <input type="number" class="subject-marks" id="sub3-marks" placeholder="e.g., 75" min="0" max="100">
+        </div>
+        <div class="input-group">
+            <label for="sub4-marks">AIML:</label>
+            <input type="number" class="subject-marks" id="sub4-marks" placeholder="e.g., 68" min="0" max="100">
+        </div>
+        
+        <button id="calculate-btn">Get Overall Grade</button>
+
+        <div class="result-container">
+            <h2>Your Results</h2>
+            <div id="grade-output"></div>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

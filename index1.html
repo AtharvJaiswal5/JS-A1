@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple & Orange Shop</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Fruit Bill</h1>
+        <div class="item-card">
+            <h2>Apple</h2>
+            <p>Price: Rs.60</p>
+            <div class="input-group">
+                <label for="apple-quantity">Quantity:</label>
+                <input type="number" id="apple-quantity" value="0" min="0">
+            </div>
+        </div>
+        
+        <div class="item-card">
+            <h2>Orange</h2>
+            <p>Price: Rs.50</p>
+            <div class="input-group">
+                <label for="orange-quantity">Quantity:</label>
+                <input type="number" id="orange-quantity" value="0" min="0">
+            </div>
+        </div>
+        
+        <button id="calculate-btn">Calculate Bill</button>
+        <button id="clear-btn">Clear Bill</button>
+        
+        <div class="result-container">
+            <h2>Your Bill</h2>
+            <div id="bill-output"></div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
