@@ -1,0 +1,112 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgba(0,0,0,0.9);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: #e50914;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #e50914;
+}
+
+/* ✅ Updated image link */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero .overlay {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #e50914;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #ff1f3d;
+}
+
+.about, .contact {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #000;
+  margin-top: 40px;
+}
