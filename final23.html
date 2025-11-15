@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atharv's Art Portfolio</title>
+  <link rel="stylesheet" href="style23.css" />
+</head>
+<body>
+  <header>
+    <h1>🎨 Atharv's Art Gallery</h1>
+    <p>Discover creativity through colors and imagination</p>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="abstract">Abstract</button>
+    <button class="filter-btn" data-filter="portrait">Portrait</button>
+    <button class="filter-btn" data-filter="digital">Digital</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+  </div>
+
+  <section class="gallery">
+    <!-- Abstract -->
+    <div class="card abstract">
+      <img src="https://picsum.photos/id/1011/500/300" alt="Abstract Art" />
+      <div class="info">
+        <h2>Color Chaos</h2><p>Exploding emotions through colors.</p>
+        <span class="like-btn">❤️</span>
+      </div>
+    </div>
+    <div class="card abstract">
+      <img src="https://picsum.photos/id/1025/500/300" alt="Abstract 2" />
+      <div class="info">
+        <h2>Dream Swirl</h2><p>Abstract fusion of light and motion.</p>
+        <span class="like-btn">❤️</span>
+      </div>
+    </div>
+
+    <!-- Portrait -->
+    <div class="card portrait">
+      <img src="https://picsum.photos/id/1005/500/300" alt="Portrait 1" />
+      <div class="info"><h2>Silent Eyes</h2><p>Every portrait tells a secret.</p><span class="like-btn">❤️</span></div>
+    </div>
+    <div class="card portrait">
+      <img src="https://picsum.photos/id/1006/500/300" alt="Portrait 2" />
+      <div class="info"><h2>Smile Within</h2><p>Beauty of subtle expressions.</p><span class="like-btn">❤️</span></div>
+    </div>
+
+    <!-- Digital -->
+    <div class="card digital">
+      <img src="https://picsum.photos/id/1040/500/300" alt="Digital 1" />
+      <div class="info"><h2>Neon Realm</h2><p>Technology meets art.</p><span class="like-btn">❤️</span></div>
+    </div>
+    <div class="card digital">
+      <img src="https://picsum.photos/id/1050/500/300" alt="Digital 2" />
+      <div class="info"><h2>Cyber Dream</h2><p>Art in the digital dimension.</p><span class="like-btn">❤️</span></div>
+    </div>
+
+    <!-- Nature -->
+    <div class="card nature">
+      <img src="https://picsum.photos/id/1018/500/300" alt="Nature 1" />
+      <div class="info"><h2>Forest Whisper</h2><p>Nature's brushstrokes of peace.</p><span class="like-btn">❤️</span></div>
+    </div>
+    <div class="card nature">
+      <img src="https://picsum.photos/id/1019/500/300" alt="Nature 2" />
+      <div class="info"><h2>Golden Horizon</h2><p>Sunset hues painted across the sky.</p><span class="like-btn">❤️</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Atharv | Made with ❤️ and imagination</p>
+  </footer>
+
+  <!-- Popup Viewer -->
+  <div class="popup">
+    <span class="close">&times;</span>
+    <span class="arrow prev">&#10094;</span>
+    <img class="popup-img" src="" alt="Art Preview" />
+    <span class="arrow next">&#10095;</span>
+    <p class="popup-caption"></p>
+  </div>
+
+  <script src="script23.js"></script>
+</body>
+</html>
